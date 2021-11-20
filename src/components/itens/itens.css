@@ -1,0 +1,9 @@
+.itens{
+    padding: 3%;
+    background-color: var(--cinza);
+}
+
+.itens h1{
+    color: var(--laranja);
+    font-size: 2em;
+}

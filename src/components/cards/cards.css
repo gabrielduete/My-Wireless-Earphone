@@ -1,0 +1,74 @@
+.containerCards{
+    padding: 2%;
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: var(--cinza);
+    border-radius: 10px;
+    height: 400px;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.452);
+}
+
+.card h2{
+    margin-top: 2%;
+    font-size: 1.8em;
+    color: var(--laranja);
+}
+
+.card ul{
+    width: 70%;
+}
+
+.card li:nth-child(1){
+    margin-top: 15%;
+}
+
+.card li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+
+.card li::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgb(0, 221, 0);
+}
+
+.card .desvantagem::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgb(228, 4, 4);
+}
+
+@media (min-width: 100px) and (max-width:750px){
+    .containerCards{
+        flex-direction: column;
+    }
+
+    .card{
+        background-color: var(--cinza);
+        border-radius: 10px;
+        height: 400px;
+        width: 90%;
+        margin-top: 10%;
+    }
+
+}

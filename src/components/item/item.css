@@ -1,0 +1,13 @@
+.fone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fone img{
+    width: 50%;
+}
+
+.fone button{
+    cursor: pointer;
+}

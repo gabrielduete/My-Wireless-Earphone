@@ -10,15 +10,13 @@ function App() {
 
   const handleFones = () => {
     apiFones().then(response => {
-      setFones(response)
+      setFones(response.data)
     })
   }
 
   useEffect(() => {
     handleFones()
   }, [])
-
-  console.log(fones)
 
   return (
     <Router>
@@ -28,6 +26,7 @@ function App() {
           exact 
           element = {
             <PagMain 
+              fones = {fones}
             />
           }
       />

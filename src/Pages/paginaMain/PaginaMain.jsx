@@ -12,7 +12,9 @@ function PagMain(props){
             <Header />
             <Descricao />
             <Cards />
-            <Itens/>
+            <Itens
+                fones = {props.fones}
+            />
             <Footer />
         </main>
     )

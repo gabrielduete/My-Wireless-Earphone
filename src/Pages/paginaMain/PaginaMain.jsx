@@ -6,13 +6,13 @@ import Descricao from '../../components/descricao/Descricao'
 import Itens from '../../components/itens/Itens'
 import './pagMain.css'
 
-function PagMain(){
+function PagMain(props){
     return (
         <main className = 'container'>
             <Header />
             <Descricao />
             <Cards />
-            <Itens />
+            <Itens/>
             <Footer />
         </main>
     )

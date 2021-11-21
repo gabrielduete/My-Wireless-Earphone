@@ -26,7 +26,6 @@ function Itens(props){
                                 descricao = {fone.descricao}
                             />
                 )}
-            
             </Slider>
         </section>
     )

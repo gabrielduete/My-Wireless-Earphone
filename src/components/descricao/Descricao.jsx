@@ -21,7 +21,7 @@ function Descricao(){
                     steps={
                         ['',
                         2000, 
-                        'Os fones de ouvido sem fio utilizam o Bluetooth para se conectar aos dispositivos de áudio, ou seja, o som é passado de um lugar para o outro através de ondas de rádio, numa frequência que não recebe ou causa interferência.', 
+                        'Os Wireless Earphones(Fones de ouvido sem fio) são fones que utilizam o Bluetooth para se conectar aos dispositivos de áudio, ou seja, o som é passado de um lugar para o outro através de ondas de rádio, numa frequência que não recebe ou causa interferência.', 
                         3000]}
                     loop={1}
                     wrapper="p"

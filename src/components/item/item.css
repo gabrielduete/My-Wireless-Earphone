@@ -11,6 +11,7 @@
 .fone img{
     width: 70%;
     height: 300px;
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.411);
 }
 
 .fone button{
@@ -22,6 +23,7 @@
     padding: 3% 2%;
     transition-duration: 0.60s;
     transition: 0.60s;
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.411);
 }
 
 .fone button:hover{

@@ -41,6 +41,8 @@
 
 .button__bar li.slick-active button {
     background-color: var(--laranja);
+    height: 10px;
+    width: 10px;
 }
 
 .button__bar li button:hover{

@@ -1,9 +1,12 @@
-.itens{
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.containerItens{
     padding: 3%;
     background-color: var(--cinza);
 }
 
-.itens h1{
+.containerItens h1{
     color: var(--laranja);
     font-size: 2em;
 }

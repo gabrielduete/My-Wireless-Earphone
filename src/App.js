@@ -14,8 +14,6 @@ function App() {
     })
   }
 
-  console.log(fones)
-
   useEffect(() => {
     handleFones()
   }, [])
@@ -23,6 +21,7 @@ function App() {
   return (
     <Router>
       <Routes>
+
         <Route 
           path = '/' 
           exact 
@@ -31,15 +30,15 @@ function App() {
               fones = {fones}
             />
           }
-      />
+        />
 
-          <Route
-            path = '/'
-            exact
-            element = {
-              <Detalhes />
-            }          
-          />
+        <Route
+          path = '/'
+          exact
+          element = {
+            <Detalhes />
+          }          
+        />
       </Routes>
     </Router>
   )

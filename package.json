@@ -13,6 +13,7 @@
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
     "react-typical": "^0.1.3",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

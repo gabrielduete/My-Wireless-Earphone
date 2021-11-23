@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -15,6 +16,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    text-align: center;
     box-shadow: 1px 5px 10px 5px rgba(0, 0, 0, 0.452);
 }
 
@@ -58,7 +60,7 @@
     background-color: rgb(228, 4, 4);
 }
 
-@media (min-width: 100px) and (max-width:750px){
+@media (min-width: 100px) and (max-width:599px){
     .containerCards{
         flex-direction: column;
     }
@@ -67,8 +69,13 @@
         background-color: var(--cinza);
         border-radius: 10px;
         height: 400px;
-        width: 90%;
+        width: 70%;
         margin-top: 10%;
     }
+}
 
+@media(min-width:600px) and (max-width: 700px){
+    .card{
+        width: 40%;
+    }
 }

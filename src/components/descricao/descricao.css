@@ -39,26 +39,29 @@
 }
 
 @media (min-width: 260px) and (max-width:750px){
-    .sectionInfo .ladoEsquerdo-2{
-        width: 100%;
-        align-items: flex-start;
+    .sectionInfo{
+        flex-direction: column;
+        padding: 15% 3%;
+    }
+
+    .sectionInfo h1{
+        margin-left: 0;
+        position: relative;
     }
 
     .sectionInfo .ladoEsquerdo-2 p{
         font-size: 0.80em;
     }
-    
-    .sectionInfo .ladoEsquerdo-2 p:nth-child(2){
-        margin-top: 3%;
+
+    .sectionInfo .ladoEsquerdo-2{
+        width: 100%;
+        align-items: flex-start;
     }
     
-    .sectionInfo .ladoEsquerdo-2 p::before{
-        content: '';
-        display: block;
-        width: 10px;
-        height: 100%;
-        background-color: var(--laranja);
-        margin: 0% 1%;
+}
+
+@media (min-width: 100px) and (max-width: 300px){
+    .sectionInfo .ladoEsquerdo-2 p{
+        font-size: 0.80em;
     }
-    
 }

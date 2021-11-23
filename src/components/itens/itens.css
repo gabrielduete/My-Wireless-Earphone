@@ -55,3 +55,13 @@
     display: block;
     margin: auto;
 }
+
+.containerItens input{
+    margin-top: 3%;
+    color: white;
+    font-size: 1em;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--laranja);
+}

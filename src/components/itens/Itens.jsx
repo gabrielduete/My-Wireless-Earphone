@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './itens.css'
 import Item from '../item/Item';
 import Slider from "react-slick";
@@ -44,11 +44,76 @@ function Itens(props){
             }
         ]
     }
+    
+    const [style, setStyle] = useState({
+        display: 'none'
+    })
+
+    const [styleCarrossel, setStyleCarrossel] = useState({
+        display: 'block'
+    })
+
+    const [foneDigitado, setFoneDigitado] = useState()
+
+    // const handleMostraItem = (nomeFone) => {
+    //     setFoneDigitado(nomeFone)
+        
+    //     props.fones.forEach(fone => {
+    //         if (foneDigitado === fone.modelo){
+    //             setStyle({
+    //                 display: 'block'
+    //             })
+                
+    //             setStyleCarrossel({
+    //                 display: 'none'
+    //             })
+
+    //             console.log("É IGUAL PORRA!")
+    //         }else{
+    //             setStyle({
+    //                 display: 'none'
+    //             })
+
+    //             setStyleCarrossel({
+    //                 display: 'block'
+    //             })
+    //         }
+    //     })
+    // }
 
     return(
         <section className = 'containerItens'>
+
             <h1>Veja alguns Fones de ouvido</h1>
-            <div class = 'itens'>
+
+            <input 
+                type="text" 
+                name="search" 
+                id="search" 
+                placeholder = 'Buscar fone' 
+                onChange = {
+                    (e) => setFoneDigitado(e.target.value)
+                }
+            />
+
+            <div className = 'showItem' style = {style}>
+                {props.fones.forEach(
+                    fone => {
+                        if(foneDigitado === fone){
+                            <Item
+                                srcImg = {fone.srcImg}
+                                marca = {fone.marca}
+                                preco = {fone.preco}
+                                modelo = {fone.modelo}
+                                descricao = {fone.descricao}
+                                id = {fone.id}
+                            />
+                        }
+                    }
+                )}
+            </div>
+            
+            <div class = 'itens' style = {styleCarrossel}>
                 <Slider {...settings}>
                     {props.fones.map(
                         fone => <Item
@@ -57,13 +122,12 @@ function Itens(props){
                                     preco = {fone.preco}
                                     modelo = {fone.modelo}
                                     descricao = {fone.descricao}
+                                    id = {fone.id}
                                 />
                     )}
                 </Slider>
-
-                {props.fones.map(
-                    fone => console.log(fone))}
             </div>
+
         </section>
     )
 }

@@ -44,6 +44,10 @@ header{
 }
 
 @media (min-width: 260px) and (max-width:750px){
+    header{
+        padding: 15% 3%;
+    }
+    
     .ladoDireito{
         display: none;
     }

@@ -6,15 +6,17 @@ import Typical from 'react-typical'
 function Descricao(){
     return (
         <section className = 'sectionInfo'>
-            <Typical
-                steps={
-                    ['',
-                    100, 
-                    'O que são Wireless Earphones?', 
-                    3000]}
-                loop={1}
-                wrapper="h1"
-            />
+            <div>
+                <Typical
+                    steps={
+                        ['',
+                        100, 
+                        'O que são Wireless Earphones?', 
+                        3000]}
+                    loop={1}
+                    wrapper="h1"
+                />
+            </div>
 
             <div className = 'ladoEsquerdo ladoEsquerdo-2'>
                 <Typical

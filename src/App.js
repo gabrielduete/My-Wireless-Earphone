@@ -11,6 +11,7 @@ function App() {
   const handleFones = () => {
     apiFones().then(response => {
       setFones(response.data)
+      console.log(fones)
     })
   }
 
@@ -33,10 +34,12 @@ function App() {
         />
 
         <Route
-          path = '/'
+          path = '/fones/:id'
           exact
           element = {
-            <Detalhes />
+            <Detalhes
+               
+            />
           }          
         />
       </Routes>
